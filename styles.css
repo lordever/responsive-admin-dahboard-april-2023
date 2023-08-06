@@ -275,7 +275,7 @@ body {
 
 .graphBox .box {
     position: relative;
-    background: #fff;
+    background: var(--white);
     width: 100%;
     box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
@@ -449,6 +449,102 @@ body {
     color: var(--white);
 }
 
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 20px 100px;
+    background: var(--white);
+}
+
+footer .footerContainer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+footer .footerContainer .sec h2 {
+    position: relative;
+    color: var(--blue);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+footer .footerContainer .sec p {
+    color: var(--black2);
+}
+
+footer .footerContainer .sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 50px);
+}
+
+footer .footerContainer .sci li {
+    list-style: none;
+}
+
+footer .footerContainer .sci li a {
+    width: 36px;
+    height: 36px;
+    background: var(--blue);
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+footer .footerContainer .sci li a i {
+    color: var(--white);
+    font-size: 20px;
+}
+
+footer .footerContainer .quicklinks {
+    position: relative;
+}
+
+footer .footerContainer .quicklinks ul {
+    list-style: none;
+}
+
+footer .footerContainer .quicklinks ul li a {
+    color: var(--black2);
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+footer .footerContainer .contact .info {
+    position: relative;
+}
+
+footer .footerContainer .contact .info li {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    margin-bottom: 16px;
+}
+
+footer .footerContainer .contact .info li span {
+    color: var(--blue);
+    font-size: 20px;
+}
+
+footer .footerContainer .contact .info a {
+    color: var(--black2);
+    text-decoration: none;
+}
+
+.copyrightText {
+    width: 100%;
+    background: var(--white);
+    padding: 20px 100px 30px;
+    text-align: center;
+    color: var(--black1);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+
 /* responsive design */
 @media (max-width: 1200px) {
     .graphBox {
@@ -477,6 +573,21 @@ body {
     .cardBox {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    footer {
+        padding: 20px;
+    }
+
+    footer .footerContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 20px;
+    }
+
+    .copyrightText {
+        padding: 20px 40px 30px;
+    }
 }
 
 @media (max-width: 800px) {
@@ -490,6 +601,13 @@ body {
 
     .status.inProgress {
         white-space: nowrap;
+    }
+
+    footer .footerContainer {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
     }
 }
 
